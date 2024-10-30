@@ -1,4 +1,12 @@
 EXTERNAL MyExternalBPFunction( ABoolean, TheAnswer, PI, Message, AreasVisited )
+EXTERNAL ExBGTrans(offType, onType,bgName)
+EXTERNAL ExBGMTrans(offType, onType, bgmName)
+EXTERNAL ExRecall(myBool)
+EXTERNAL ExStreaming(myBool)
+EXTERNAL ExTutorial(msg,UI,endCondition)
+EXTERNAL ExAutoSave(nextSectionName)
+EXTERNAL ExConversation(speaker)
+
 LIST CubeColour = (White), Red, Blue, Green
 LIST visited =  Cube, RedRoundel, BlueBox, Parms, FlowsExplained, ExternalFuncs
 LIST NephewNames = Huey, Duey, Louie
@@ -142,9 +150,15 @@ VAR mycombinedlist = (Cube, Blue, Louie)
     
 == ExternalFunctionDemo
     ~visited += ExternalFuncs
+    
     This section demos how Ink can call into a blueprint function. 
     // any of the values here can be changed in the inkpot debug
-    ~temp ReturnValue = MyExternalBPFunction( mybool, myinteger, myfloat, mystring, mycombinedlist )
+    // ~temp ReturnValue = MyExternalBPFunction( mybool, myinteger, myfloat, mystring, mycombinedlist )
+    ~temp ReturnValue = ExBGMTrans("hard","hard","dwarf")
+    and this, '{ReturnValue}', is what it returned. 
+    ~temp ReturnValue2 = ExBGMTrans("fade","hard","human")
+    and this, '{ReturnValue}', is what it returned. 
+    ~temp ReturnValue3 = ExBGMTrans("hard","fade","orc")
     and this, '{ReturnValue}', is what it returned. 
     ->DONE
 
