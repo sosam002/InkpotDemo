@@ -250,7 +250,7 @@ VAR mycombinedlist = (Cube, Blue, Louie)
 // 배경구성 (3D)   헤시타거스 던전, 해시타거스 너머 벽이 뚫렸음(더스트 탈출로)
 // 등장인물 (3D)	반격전사  토르, 아이리스(궁수or법사), 페르고니브스 전사, 라스엘(치유성기사든 신성법사든 관계없음), 더스트(쪼렙 전사템 입고있는 청년), 쓰러진 헤시타거스, 몬스터들
 // 인물연출 (3D)	영웅들의 몸이 굳음, 몬스터들은 더스트를 신경쓰지 않음. 수가 많고 어그로와 상관 없이 영웅마다 한두마리씩
-~ReturnValue = ExBGMTrans("hard", "hard", "비장, 긴박, 슬픈 전투")
+~ReturnValue = ExBGMTrans("hard", "hard", "death")
 // ~ReturnValue = ExSFX("동굴 깊은 곳에서의 저음의 울림. 대지의 신음같은")
 ~ReturnValue = ExBlackout(true)
 ~ReturnValue = ExBlackout(false)
@@ -326,7 +326,7 @@ ExTutorial(" [토벌완료] 버튼을 누르고 전리품을 획득하세요.", 
 
 + [Section: 월드맵]
 -
-~ReturnValue = ExBGMTrans("fade","fade", "슬프고 비장한 인간 BGM")
+~ReturnValue = ExBGMTrans("fade","fade", "world")
 저기다. 숲으로 가면 당분간은 안전할 거야.
 
 // ~ReturnValue = ExNewQuest("main", "어둠이 질 때까지", "숲")
@@ -342,7 +342,7 @@ ExTutorial(" [토벌완료] 버튼을 누르고 전리품을 획득하세요.", 
 질서를 지키는 피스 브링어따위...
 ~ReturnValue = ExBlackout(true)
 // ~ReturnValue = ExQuestDone("main")
-~ReturnValue = ExBGMTrans("fade","fade", "밤벌레 우는 소리")
+~ReturnValue = ExBGMTrans("fade","fade", "decide")
 
 어머니가 들려주시던 카오스 브링어의 전설이 떠오른다.
 그저 전설이 아니었던 것일까...
