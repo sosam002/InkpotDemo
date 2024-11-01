@@ -9,9 +9,6 @@ EXTERNAL ExConversation(speaker)
 EXTERNAL ExCamShake(myBool)
 EXTERNAL ExBlackout(myBool)
 EXTERNAL ExIsEvent(myBool)
-EXTERNAL ExSFX(effeectName)
-EXTERNAL ExNewQuest(questType, questName, location)
-EXTERNAL ExShowQuest(questType)
 
 VAR Dust = "더스트"
 VAR Hes = "헤시타거스"
@@ -159,7 +156,7 @@ VAR mycombinedlist = (Cube, Blue, Louie)
     
 == ExternalFunctionDemo
     ~visited += ExternalFuncs
-    
+    ddfdfdfdasfㅁㅇㄴㄹ미ㅏ넝ㄹ;ㅣ마넝;리ㅏㅓㅁ
     This section demos how Ink can call into a blueprint function. 
     // any of the values here can be changed in the inkpot debug
     // ~temp ReturnValue = MyExternalBPFunction( mybool, myinteger, myfloat, mystring, mycombinedlist )
@@ -181,10 +178,10 @@ VAR mycombinedlist = (Cube, Blue, Louie)
     // ~temp ReturnValue8 = ExBlackout(false)
     // ExRecall(true)
 ~temp ReturnValue = ExBGMTrans("fade","fade", "human")
-~ReturnValue = ExConversation(Dust)
+// ~ReturnValue = ExConversation(Dust)
 + [이것이 나의 마지막 기억... 이상한 점을 찾아야 해.]
 - 
-~ReturnValue = ExConversation(Fer)
+// ~ReturnValue = ExConversation(Fer)
 + [일단 신전에서 준비한 장비를 준비하자.]
 -
 상점에서 구매 완료
