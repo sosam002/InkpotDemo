@@ -156,8 +156,6 @@ VAR mycombinedlist = (Cube, Blue, Louie)
     
 == ExternalFunctionDemo
     ~visited += ExternalFuncs
-    ddfdfdfdasfㅁㅇㄴㄹ미ㅏ넝ㄹ;ㅣ마넝;리ㅏㅓㅁ
-    This section demos how Ink can call into a blueprint function. 
     // any of the values here can be changed in the inkpot debug
     // ~temp ReturnValue = MyExternalBPFunction( mybool, myinteger, myfloat, mystring, mycombinedlist )
     // ~temp ReturnValue = ExBGMTrans("hard","hard","dwarf")
@@ -178,23 +176,23 @@ VAR mycombinedlist = (Cube, Blue, Louie)
     // ~temp ReturnValue8 = ExBlackout(false)
     // ExRecall(true)
 ~temp ReturnValue = ExBGMTrans("fade","fade", "human")
-// ~ReturnValue = ExConversation(Dust)
+~ReturnValue = ExConversation(Dust)
 + [이것이 나의 마지막 기억... 이상한 점을 찾아야 해.]
 - 
-// ~ReturnValue = ExConversation(Fer)
+~ReturnValue = ExConversation(Fer)
 + [일단 신전에서 준비한 장비를 준비하자.]
 -
-상점에서 구매 완료
+// 상점에서 구매 완료
 + [모두 장비하도록...]
 -
-무기장착 완료
+// 무기장착 완료
 
 + [자, 이제 드디어 마지막... 헤시타거스만 처치하면 된다. 아드라시스를 위하여!]
 -
-헤시타거스 맵 진입
+// 헤시타거스 맵 진입
 
-+ [Section: Intro_2 시간 되돌아간 더스트 - 헤시타거스]
--
+// + [Section: Intro_2 시간 되돌아간 더스트 - 헤시타거스]
+// -
 // 배경구성 (3D)   헤시타거스 던전
 // 등장인물 (3D)	반격전사  토르, 아이리스(궁수or법사), 페르고니브스 전사, 라스엘(치유성기사든 신성법사든 관계없음), 더스트(쪼렙 전사템 입고있는 청년), 헤시타거스
 // 인물연출 (3D)	영웅 4인과 헤시타거스 레이드 전투중. 기둥 뒤 더스트 숨어서 전투를 지켜봄
@@ -214,8 +212,8 @@ VAR mycombinedlist = (Cube, Blue, Louie)
 // ~ReturnValue = ExRaidMsg("헤시타거스가 [호권]을 시전합니다." )// 레이드 알람     헤시타거스가 "호권"을 시전합니다.
 ~ReturnValue = ExStreaming(false) //시간연출 (전투)        "호권"시전 후 0.5초 후 자동정지
 
-+ [Section: intro_2_BattleEnds 전투 끝 페르고니브스와 대화]
--
+// + [Section: intro_2_BattleEnds 전투 끝 페르고니브스와 대화]
+// -
 ~ReturnValue = ExIsEvent(true) //전투 UI 제거
 // 배경종류        비전투 3D (헤시타거스 레이드 던전화면 그대로)
 // 배경구성 (3D)   헤시타거스 던전
@@ -231,7 +229,8 @@ VAR mycombinedlist = (Cube, Blue, Louie)
 // 인물연출        페르고니브스가 더스트에게 걸어감
 // 카메라초점      페르고니브스 포커스
 // 카메라연출      패닝으로 따라감
-더스트, 잘 지켜보았나? 이것이 바로 진정한 영웅들의 힘이야.
+더스트, 잘 지켜보았나? 이것이 바로 진정한 영웅들의 힘이야.1
+더스트, 잘 지켜보았나? 이것이 바로 진정한 영웅들의 힘이야.2
 ~ReturnValue = ExConversation(Dust)
 + [네, 정말... 대단합니다!]
 -
